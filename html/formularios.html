@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+<!-- 
+ACTION: indica la página donde serán enviados los datos.
+METHOD: indica el método mediante el cual enviamos esos datos
+-->
+    <form action="pagina_destino.php" method="GET">
+<!--Elementos básicos de un formulario.
+
+En la etiqueta LABEL colocamos el atributo FOR, donde indicamos a que
+etiqueta INPUT hace referencia.
+Vemos incluso que, si pulsamos sobre alguno de los LABEL, la página hará
+foco sobre la etiqueta INPUT que le corresponde.
+Podemos hacer la sintaxis un poco mas simple si colocamos el INPUT
+dentro de la etiqueta LABEL, ahorrándonos el atributo FOR:
+
+-->
+        <label for="texto">Tipo Texto</label> <br/>
+        <input type="text" id="texto"> <br/>
+        <label>Tipo Boton</label> <br/>
+        <input type="button" value="Aceptar"> <br/>
+        <label>Tipo CheckBox
+        <input type="checkbox">
+        </label> <br/>
+        <label>Tipo Date</label> <br/>
+        <input type="date"> <br/>
+        <label>Tipo File</label> <br/>
+        <input type="file"> <br/>
+        <label>Tipo Password</label> <br/>
+        <input type="password"> <br/>
+        <label>Tipo Radio</label> <br/>
+        <input type="radio"> <br/>
+        <label>Tipo Range</label> <br/>
+        <input type="range"> <br/>
+        <label>Tipo Reset</label> <br/>
+        <input type="reset"> <br/>
+    </form>
+
+<!--
+    Los datos que se cargan en un formulario,
+son para ser enviados a un servidor que los procese.
+Este servidor deberá saber que dato enviado corresponde a que elemento
+del formulario, y para ello, utilizamos el atributo NAME del input, para que
+el servidor pueda identificar cada elemento que enviamos en el
+formulario.
+
+
+-->
+<form action="pagina_destino.php" method="POST">
+    <label> Inprese su nombre
+        <input type="text" name='user_name' value="Emanuel">
+    </label>
+    <br><br>
+    <label>Ingrese su apellido
+    <input name="apellido">
+    </label>
+    <br><br>
+<!--
+    Si vemos este formulario por pantalla, veremos que el botón aparece con
+la leyenda “Enviar” por defecto, pero podemos asignarle la que
+necesitemos que tenga, mediante el atributo VALUE.
+
+Este atributo VALUE también podemos utilizarlo en otras etiquetas, por
+ejemplo, si el usuario quisiera modificar sus datos, previamente cargados
+en una base de datos, podemos mostrarle lo que tenemos para que el solo
+modifique lo que necesita y no tenga que cargarlos todos nuevamente.
+-->
+    <input type="submit" value="Aceptar">
+</form>
+
+</body>
+</html>

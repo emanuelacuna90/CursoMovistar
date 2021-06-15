@@ -1,0 +1,21 @@
+
+table{
+    width: 400px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background-color: orange;
+}
+
+.oscuro{
+    background-color: rgb(10, 83, 179);
+}
+.claro{
+    background-color: rgb(82, 193, 236);
+}

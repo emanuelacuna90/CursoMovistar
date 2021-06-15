@@ -1,0 +1,70 @@
+body{
+   background-color: rgb(194, 194, 194);
+   margin: 0px;
+}
+
+/*Header*/
+header{
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(61, 134, 202), rgb(194, 194, 194));
+}
+header a img{
+    width: 50px;
+ 
+}
+header h1{
+    text-align: center;
+    font-size: 49px;
+}
+
+/* Section Figure Aside*/
+figure{
+    margin-left: 117px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside{
+    width: 207px;
+}
+aside p{
+    width: 188px;
+}
+
+
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 294px;
+    margin-left: 10px;
+}
+
+input{
+    width: 100px;
+    margin-right: 44px;
+}
+
+label{
+    width: 290px;
+    display: inline-block;
+    text-align: right;
+    font-size: 11px;
+    margin: 5px 0px;
+}
+
+.opcion{
+    text-align: left;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer a{
+    margin: 0px 10px;
+}
